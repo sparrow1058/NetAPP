@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="320dip"
+  android:layout_height="100dip"
+  android:orientation="vertical">
+  <TextView
+  android:id="@+id/testtv"
+  android:textSize="20px"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  </TextView>
+  <LinearLayout 
+   android:gravity="center"
+   android:layout_gravity="center|bottom"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content">
+   <Button 
+   android:id="@+id/testbok"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="确定">
+   </Button>
+   <Button 
+   android:id="@+id/testbfail"
+   android:layout_marginLeft="50px"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="取消">
+   </Button>
+   </LinearLayout>
+</FrameLayout>

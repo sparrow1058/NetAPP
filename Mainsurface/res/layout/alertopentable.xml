@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>  
+  
+    <!-- dialog layout -->  
+  
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:id="@+id/aot_rootll"
+    android:orientation="vertical" 
+    android:layout_width="350dip"  
+    android:layout_height="250dip"> 
+    <TextView  
+        android:text="修改餐台信息"  
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textColor="@color/red_yellow"
+        android:textSize="22dip"
+        android:paddingTop="20dip"
+        android:layout_gravity="center"
+      /> 
+    <LinearLayout android:orientation="horizontal"  
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:paddingTop="15dip"
+        android:layout_gravity="center"
+        >  
+        <!-- android:layout_gravity="left" -->
+      <TextView  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textColor="@color/red_yellow"
+            android:text="餐台名称:"
+            android:textSize="20dip"
+         />  
+  
+        <EditText 
+            android:id="@+id/alert_tableid"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/black" 
+            />  
+    </LinearLayout>  
+  
+    <LinearLayout 
+    	android:orientation="horizontal"  
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"  
+        android:paddingTop="15dip"
+        android:layout_gravity="center"
+        > 
+        <TextView  
+        	android:text="人  数："  
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textColor="@color/red_yellow"
+            android:textSize="20dip"
+        />  
+        <EditText 
+            android:layout_width="100dip"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/black"  
+            android:numeric="integer"
+            android:id="@+id/alert_guestnum"
+            />  
+  
+    </LinearLayout>  
+   
+  	<LinearLayout
+  			android:orientation="horizontal"
+  			android:paddingTop="20dip"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content" 
+  			android:gravity="center"
+  			>
+  		<Button	
+  			android:id="@+id/aot_submit"
+  			android:text="修改开台"
+  			android:background="@drawable/buttonbg"
+  			android:layout_width="75dip" 
+	        android:layout_height="45dip"
+	        android:textColor="@color/red_yellow"
+	         /> 
+
+	    <Button	
+  			android:id="@+id/aot_close"
+  			android:text="取消"
+  			android:layout_marginLeft="50dip"
+  			android:background="@drawable/buttonbg"
+  			android:layout_width="75dip" 
+	        android:layout_height="45dip"
+	        android:textColor="@color/red_yellow"
+	         /> 
+  		</LinearLayout>
+  
+</LinearLayout> 

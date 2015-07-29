@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical" 
+    android:layout_width="350dip"  
+    android:layout_height="250dip"
+    >  
+   <TextView 
+            android:layout_marginTop="15dip"
+            android:text="开  台"  
+            android:layout_gravity="center"
+            android:textSize="22dip"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textColor="@color/red_yellow"
+           />  
+  <!-- TextView的宽高除了和自己设定的width和height有关另外和它里面显示的内容也有关
+  	像本例中，因为不能保证每个TextView中的内容的宽度都是相同的，因此应该至少对每个
+  	TextView的宽度进行绝对值的设置，而不是wrap_content，才能保证在TextView右边的
+  	EditText的横坐标的位置都一样。
+  	
+  	在TextView 中设置 gravity="left|right|center" 是设置TextView中的内容，相对于TextView
+  	自己的宽度，显示在TextView中是靠左显示，靠右显示，还是居中显示，注意：左右中都是横向的，对内容
+  	在纵向上的位置没有影响。
+   -->
+    <LinearLayout 
+       android:orientation="horizontal"  
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"  
+        android:paddingTop="10dip"
+        android:layout_gravity="center"
+        >  
+        <TextView 
+            
+            android:text="餐台名称:"  
+            android:textSize="20dip"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="5dip"
+             android:textColor="@color/red_yellow"
+           />  
+        <EditText 
+  			android:id="@+id/ot_et_tableid"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="right" 
+            android:layout_marginLeft="20dip"
+            android:textColor="@color/black"
+            />  
+         <Button	
+  			android:id="@+id/kt_select"
+  			android:text="选择餐台"
+  			android:layout_marginLeft="20dip"
+  			android:background="@drawable/buttonbg"
+  			android:layout_width="75dip" 
+	        android:layout_height="45dip"
+	        android:textColor="@color/red_yellow" 
+	       /> 
+    </LinearLayout>  
+  
+    <LinearLayout 
+    	android:orientation="horizontal"  
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"  
+        android:paddingTop="10dip"
+        
+        > 
+        <TextView  
+        	android:text="顾客人数:"  
+        	android:textSize="20dip"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+             android:textColor="@color/red_yellow" 
+             android:layout_marginLeft="25dip"
+           />  
+  
+        <EditText 
+        	android:id="@+id/ot_et_peoplenum"
+            android:layout_width="100dip"
+			android:layout_height="wrap_content"  
+			android:text="1"
+			android:numeric="integer"
+			android:layout_marginLeft="20dip"
+            android:textColor="@color/black"
+             />
+          
+    </LinearLayout>  	
+  	<LinearLayout
+	  android:orientation="horizontal"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:paddingTop="20dip"
+      android:paddingLeft="15dip"
+	  android:gravity="center"
+  	>
+  		<Button	
+  			android:id="@+id/ot_submit"
+  			android:text="开台"
+  			android:background="@drawable/buttonbg"
+  			android:layout_width="75dip" 
+	        android:layout_height="45dip"
+	        android:textColor="@color/red_yellow" 
+	       /> 
+	    <Button	
+  			android:id="@+id/ot_close"
+  			android:text="取消"
+  			android:layout_marginLeft="25dip"
+  			android:background="@drawable/buttonbg"
+  			android:layout_width="75dip" 
+	        android:layout_height="45dip"
+	        android:textColor="@color/red_yellow" 
+	         /> 
+  		</LinearLayout>
+  
+</LinearLayout> 

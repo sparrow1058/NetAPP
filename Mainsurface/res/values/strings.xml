@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainUIActivity!</string>
+    <string name="todaytj">今日推荐</string>
+    <string name="app_name">服务员手持端</string>
+    <string name="loginbs">员工登录</string>
+    <string name="workerid">员工编号:</string>
+    <string name="password">员工密码:</string>
+    <string name="isrem">是否记住：</string>
+    <string name="ok">确定</string>
+    <string name="reset">取消</string>
+    <string name="back">返回</string>
+    <string name="ydcp">已点菜品</string>
+    <string name="num">数量</string>
+    <string name="xd">下单</string>
+    <string name="deskid">桌台号：</string>
+    <string name="deskname">桌名：</string>
+    <string name="oupdate">更新</string>
+       <string name="showvege">出品</string>
+          <string name="moreinfo">更多</string>
+             <string name="allmoney">总金额：</string>
+              <string name="pointinfo">餐台信息</string>
+              <string name="allpointinfo">全部</string>
+              <string name="pointselect">区域选择</string>
+               <string name="dt">大厅</string>
+               <string name="bx">包厢</string>
+                <string name="waiterno">服务员编号：</string>
+    <string name="orderid">订单ID：</string>
+    <string name="ordertime">下单时间：</string>
+    <string name="vegename">菜品名称</string>
+    <string name="vegecount">菜品数量</string>
+    <string name="vegeprice">菜品价格</string>
+    <string name="opentable">开台</string>
+    <string name="infoshow">信息提示</string>
+    <string name="refrush">更新</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/fom_linearlayout01"
+  android:orientation="horizontal"
+  android:background="@color/white"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	<!-- 桌子名 -->
+  	<TextView
+		android:id="@+id/fom_tv_tableno"
+		android:layout_marginLeft="20dip"
+		android:layout_width="70dip"
+		android:textColor="@color/black"
+		android:layout_height="wrap_content"
+		/>
+  	<!-- 菜品名称 -->
+	<TextView
+		android:id="@+id/fom_tv_vegename"
+		android:layout_width="105dip"
+		android:textColor="@color/black"
+		android:layout_height="wrap_content"
+		/>
+	<!-- 减少菜品数量 -->
+	<Button
+		android:id="@+id/fom_but_sub"
+		android:layout_width="45dip"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dip"
+		/>
+	<!-- 菜品数量 -->
+	<TextView
+		android:id="@+id/fom_tv_vegecount"
+		android:gravity="center"
+		android:paddingLeft="5dip"
+		android:layout_width="30dip"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		/>
+	<!-- 增加菜品数量 -->
+	<Button
+		android:id="@+id/fom_but_add"
+		android:layout_width="45dip"
+		android:layout_height="wrap_content"
+		/>
+	<!-- 菜品单价 -->
+	<TextView
+		android:id="@+id/fom_tv_vegeprice"
+		android:layout_width="70dip"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		android:layout_marginLeft="30dip"
+		/>
+	<!-- 删除按钮  -->
+	<Button
+		android:id="@+id/fom_but_delete"
+		android:layout_marginLeft="20dip"
+		android:layout_width="50dip"
+		android:layout_height="wrap_content"
+		/>
+</LinearLayout>

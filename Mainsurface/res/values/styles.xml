@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="logindialog" parent="@android:style/Theme.Dialog">  
+		<item name="android:windowFrame">@null</item>  
+		<item name="android:windowIsFloating">true</item>  
+		<item name="android:windowIsTranslucent">false</item>  
+		<item name="android:windowNoTitle">true</item>  
+		<item name="android:windowBackground">@drawable/shapecorner</item>  
+		<item name="android:backgroundDimEnabled">false</item>  <!--去背景遮盖  -->
+	</style>  
+	<style name="DCdialog" parent="android:Theme.Dialog">
+	  <item name="android:windowFrame">@null</item> 
+	  <item name="android:windowIsFloating">true</item> 
+	  <item name="android:windowIsTranslucent">false</item> 
+	  <item name="android:windowNoTitle">true</item> 
+	  <item name="android:windowBackground">@drawable/shaprectangle</item> 
+	  <item name="android:backgroundDimEnabled">false</item>
+  	</style>
+  	<style name="tabledialog" parent="android:Theme.Dialog">
+	  <item name="android:windowFrame">@null</item> 
+	  <item name="android:windowIsFloating">true</item> 
+	  <item name="android:windowIsTranslucent">true</item> 
+	  <item name="android:windowNoTitle">true</item> 
+	  <item name="android:windowBackground">@drawable/shaprectangle</item> 
+	  <item name="android:backgroundDimEnabled">false</item>
+  	</style>
+  	<style name="ProgressDialog" parent="android:Theme.Dialog">
+	  <item name="android:windowFrame">@null</item> 
+	  <item name="android:windowIsFloating">true</item> 
+	  <item name="android:windowIsTranslucent">false</item> 
+	  <item name="android:windowNoTitle">true</item> 
+	  <item name="android:windowBackground">@drawable/shaprectangle</item> 
+	  <item name="android:backgroundDimEnabled">false</item>
+  	</style>
+  	<style name="morefunction">
+		<item name="android:windowFrame">@null</item>  
+		<item name="android:windowIsFloating">true</item>  
+		<item name="android:windowIsTranslucent">false</item>  
+		<item name="android:windowNoTitle">true</item>  
+		<item name="android:windowBackground">@drawable/morefunctionbg</item>  
+		<item name="android:backgroundDimEnabled">false</item>  <!--背景遮盖true时背景有黑色蒙版，false时没有  -->
+		<item name="android:windowFullscreen">false</item> 
+	</style> 
+	<style name="OrderManagedialog" parent="@android:style/Theme.Dialog"> 
+		<item name="android:windowFrame">@null</item>  
+		<item name="android:windowIsFloating">true</item>  
+		<item name="android:windowIsTranslucent">false</item>  
+		<item name="android:windowNoTitle">true</item>  
+		<item name="android:windowBackground">@drawable/shapeordermanage</item>  
+		<item name="android:backgroundDimEnabled">false</item>  
+	</style>
+		<style name="queryorder" parent="@android:style/Theme.Dialog"> 
+		<item name="android:windowFrame">@null</item>  
+		<item name="android:windowIsFloating">true</item>  
+		<item name="android:windowIsTranslucent">false</item>  
+		<item name="android:windowNoTitle">true</item>  
+		<item name="android:windowBackground">@drawable/queryorder</item>  
+		<item name="android:backgroundDimEnabled">false</item>  
+	</style>
+	<style name="activitytheme"> 
+		<item name="android:windowIsTranslucent">true</item> 
+	</style>
+	<style name="errordialog" parent="@android:style/Theme.Dialog">  
+		<item name="android:windowFrame">@null</item>  
+		<item name="android:windowIsFloating">true</item>  
+		<item name="android:windowIsTranslucent">false</item>  
+		<item name="android:windowNoTitle">true</item>  
+		<item name="android:windowBackground">@drawable/shapeerrorcorner</item>  
+		<item name="android:backgroundDimEnabled">false</item>  <!--去背景遮盖  -->
+	</style> 
+</resources>

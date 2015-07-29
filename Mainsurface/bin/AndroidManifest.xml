@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bn"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+      <uses-sdk android:minSdkVersion="15"/> 
+      
+        <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:name=".main.MainActivity"
+                  android:label="@string/app_name"
+          >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".selectvege.SelectVegeActivity"
+            android:label="@string/app_name"
+         >
+        </activity>
+        <activity
+            android:name=".main.GalleryActivity"
+            android:label="@string/app_name" 
+          >
+        </activity>
+        <activity
+            android:name=".dc.DCUIActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/DCdialog"
+        >
+        </activity>
+        <activity
+            android:name=".main.ProgressBarActivity"
+            android:label="@string/app_name" 
+             android:theme="@style/ProgressDialog"
+         >
+        </activity>
+        <activity
+            android:name=".main.ExceptionDialog"
+            android:label="@string/app_name" 
+             android:theme="@style/DCdialog"
+         >
+        </activity>
+        <activity
+            android:name=".vegeinfo.VegeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/activitytheme"
+         >
+            <!-- android:theme="@style/activitytheme"  -->
+        </activity>
+        <activity
+            android:name=".showorder.ShowOrderActivity"
+            android:label="@string/app_name" 
+         >
+        </activity>
+        <activity 
+            android:label="@string/app_name" 
+            android:name=".table.OpenTableActivity" 
+            android:theme="@style/DCdialog"
+         > 
+         </activity> 
+         <activity 
+             android:label="@string/app_name" 
+             android:name=".table.ChangeTableActivity"
+             android:theme="@style/DCdialog"
+         > 
+         </activity> 
+         <activity 
+             android:label="@string/app_name" 
+             android:name=".table.AlertTableActivity" 
+             android:theme="@style/DCdialog"
+          > 
+         </activity> 
+         <activity 
+             android:label="@string/app_name"
+             android:name=".table.MergeTableActivity"
+             android:theme="@style/DCdialog"
+          > 
+           <!-- android:theme="@style/tabledialog" -->
+         </activity> 
+         <activity
+             android:label="@string/app_name"
+             android:name=".table.CancleTableActivity"
+             android:theme="@style/DCdialog"
+          > 
+         </activity>
+         <activity
+             android:label="@string/app_name"
+             android:name=".table.CancleCombineTableActivity"
+             android:theme="@style/DCdialog"
+          > 
+          
+         </activity>
+         <activity
+              android:name=".table.SelectTableActivity"
+              android:label="@string/app_name"
+           >
+        </activity>
+        <activity
+            android:name=".resetpw.ResetPassWord"
+            android:label="@string/app_name" 
+            android:theme="@style/logindialog"
+         >
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/logindialog"
+         >
+        </activity>
+        <activity
+            android:name=".showorder.InPutNumber"
+            android:label="@string/app_name" 
+            android:theme="@style/logindialog"
+         >
+        </activity>
+        <activity
+            android:name=".logout.LogoutActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/logindialog"
+            >
+        </activity>
+        <activity
+            android:name=".selectvege.MoreFunctionActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/morefunction"
+            >
+        </activity>
+        <activity
+            android:name=".reset.ResetUIActivity"
+            android:label="@string/app_name" 
+            >
+        </activity>
+        <activity
+            android:name=".com.bn.yq.DCYQActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/DCdialog"
+            >
+        </activity>
+        <activity
+            android:name=".yq.DCYQActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/DCdialog"
+            >
+        </activity>
+        <activity
+            android:name=".resetmain.ResetDialogActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/logindialog"
+            >
+        </activity>
+        <activity
+            android:name=".gqvege.GQVegeUIActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".manageorder.OrderManageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".manageorder.OrderSetUpActivity"
+            android:theme="@style/OrderManagedialog"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".manageorder.QueryOrderDialog"
+            android:theme="@style/morefunction"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".manageorder.ExceptionHandleDialog"
+            android:theme="@style/OrderManagedialog"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".manageorder.VegeDetail"
+            android:theme="@style/OrderManagedialog"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".manageorder.VegeDetailSetUp"
+            android:theme="@style/OrderManagedialog"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".resetlogin.ResetLoginActivity"
+            android:theme="@style/logindialog"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name=".error.ResetErrorActivity"
+            android:theme="@style/errordialog"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".manageorder.VegeRequireDialog"
+            android:theme="@style/OrderManagedialog"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".user.UserUIActivity"
+            android:theme="@style/OrderManagedialog"
+            android:label="@string/app_name" >
+        </activity>
+        <activity 
+            android:name=".vegeimage.VegeImageUIActivity"
+             android:label="@string/app_name" />
+    </application>
+ 
+ <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+ <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> -->
+</manifest> 

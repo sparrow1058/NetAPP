@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  <FrameLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/toolbarbkimage"
+  android:orientation="horizontal">
+  <Button
+  android:layout_gravity="left"
+  android:id="@+id/bsetmain"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/toolbar_back_normal"
+  android:text="主界面"
+  android:textColor="@color/white">
+  </Button>
+  <TextView
+  android:layout_gravity="center"
+  android:id="@+id/tvset"
+  android:text="系统设置"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  </TextView>
+   <Button
+  android:layout_gravity="right"
+  android:id="@+id/bsetsave"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/toolbar"
+  android:text="保存"
+  android:textColor="@color/white">
+  </Button>
+  </FrameLayout>
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/white_yellow">
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20px"
+android:gravity="center_horizontal">
+<TextView
+android:id="@+id/tvsetip"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="服务端地址："
+android:textColor="@color/red">
+</TextView>
+<EditText
+android:id="@+id/etsetip"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textColor="@color/red"
+>
+</EditText>
+</LinearLayout>
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="10px"
+android:gravity="center_horizontal">
+<TextView
+android:id="@+id/tvsetpoint"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="服务端口号："
+android:textColor="@color/red">
+</TextView>
+<EditText
+android:id="@+id/etsetpoint"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textColor="@color/red">
+</EditText>
+</LinearLayout>
+ <Button
+ android:id="@+id/bsettest"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_marginLeft="460px"
+ android:layout_marginTop="10px"
+ android:background="@drawable/buttonbg"
+ android:text="测试连接"
+ android:textColor="@color/black">
+ </Button>  
+</LinearLayout>
+</LinearLayout>

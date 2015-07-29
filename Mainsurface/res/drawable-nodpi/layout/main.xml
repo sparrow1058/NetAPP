@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainback"
+    android:orientation="vertical" 
+    >
+   <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="210dip"
+    android:orientation="horizontal"
+    >
+    <TextView
+      android:layout_marginLeft="20dip"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="欢迎光临"
+      android:textSize="100dip"
+    ></TextView>
+    </LinearLayout>
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom"
+       >
+	 <com.bn.main.ButtonListBar
+	     android:layout_width="fill_parent"
+	     android:layout_height="109dip"
+	     android:id="@+id/bbar"
+	 />
+ </LinearLayout> 
+</FrameLayout>
