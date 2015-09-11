@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.android.wifidirect"
+    android:versionCode="1" android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="16" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Google Play filtering --> 
+    <uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo">
+        
+        <activity
+            android:name="com.example.start.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.example.start.AndyViewPagerActivity">            
+        </activity>        
+        <activity
+            android:name=".WiFiDirectActivity"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask">                
+        </activity>
+        
+        <!--   item   -->
+        <activity
+            android:name="com.example.androidui.ItemListActivity"
+            android:label="@string/androidUI" >            
+        </activity>
+        
+        <activity
+            android:name="com.example.androidui.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName="com.example.androidui.ItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidui.ItemListActivity" />
+        </activity>
+        <!-- photo -->
+        <activity
+            android:name="com.example.testpic.TestPicActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >        
+        </activity>
+        
+        <activity
+            android:name="com.example.testpic.ImageGridActivity"          
+            android:label="@string/empty"
+            android:parentActivityName="com.example.testpic.TestPicActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.testpic.TestPicActivity" />
+        </activity>
+        <activity
+            android:name="com.example.testpic.PublishedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.testpic.PhotoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!--app  -->
+        <activity
+            android:name="com.example.android_app.AppMainViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <!--  file   -->
+         <activity
+            android:name="com.example.android_fileSim.FileSimMainActivity"
+            android:label="@string/app_name" 
+            android:parentActivityName=".WiFiDirectActivity" >           
+        </activity>
+        
+         <activity
+            android:name="com.example.android_file.FileMainActivity"
+            android:label="@string/app_name" >           
+        </activity>
+                
+        <!--聊天  -->
+        <activity
+            android:name="com.example.android.discovery.WiFiServiceDiscoveryActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:parentActivityName=".WiFiDirectActivity" >            
+        </activity>
+               
+       <!-- Simple -->
+        <activity
+            android:name="com.example.android_photo.TestPicSimActivity" 
+            android:parentActivityName=".WiFiDirectActivity" >     
+                
+        </activity>
+        
+        <!-- android:theme="@android:style/Theme.NoTitleBar" > -->
+             
+        <activity
+            android:name="com.example.android_photo.ImageGridActivity"          
+            android:label="@string/empty"
+            android:parentActivityName="com.example.android_photo.TestPicSimActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android_photo.TestPicActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android_photo.PublishedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.example.android_photo.PhotoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:parentActivityName=".WiFiDirectActivity" >
+            
+        </activity>
+        <activity
+            android:name="com.example.android_appSim.AppSimMainViewActivity"
+            android:label="@string/app_name" 
+            android:parentActivityName=".WiFiDirectActivity" >
+        </activity>
+     
+        <!-- Used for transferring files  after a successful connection -->
+        <service android:enabled="true" android:name=".FileTransferService" />
+		<service android:name="com.example.android_fileSim.FileService" />
+		<service android:name="com.example.android_file.FileService" />
+    </application>
+</manifest>

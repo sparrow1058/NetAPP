@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void run() {
-				if (preferences.getBoolean("firststart", true)) {
+				if (preferences.getBoolean("firststart", false)) {
 					editor = preferences.edit();  
 				    //将登录标志位设置为false，下次登录时不在显示首次登录界面  
 				    editor.putBoolean("firststart", false);  
